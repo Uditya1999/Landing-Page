@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>E-Commerce</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-image:linear-gradient(rgba(83, 57, 203, 0.603),rgba(52, 215, 150, 0.592)), url("E comm back.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+        }
+        ul{
+            float: right;
+            margin-top: 25px;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li a{
+            text-decoration: none;
+            color: #333;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            border-radius: 50px;
+        }
+        ul li a:hover{
+            background-color: #333;
+            color: white;
+            transition: 0.5s;
+        }
+        ul li.active a{
+            background-color: #333;
+            color: white;
+            transition: 0.5s;
+        }
+        .logo img{
+            float: left;
+            width: 70px;
+            height: auto;
+        }
+        .nav-bar{
+            max-width: 1200px;
+            margin: auto;
+        }
+        .products{
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .products ul li{
+            border: 2px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .products ul li img{
+            width: 200px;
+            height: 200px;
+        }
+        .products ul li button{
+            position: relative;
+            margin-left: 65px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="logo">
+                <img src="logo.png" alt="not available">
+            </div>
+            <ul>
+                <li class="active"><a href="#">HOME</a></li>
+                <li><a href="#">STORE</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">LOG-IN/SIGN-UP</a></li>
+            </ul>
+        </div>
+        <div class="products">
+            <ul>
+                <li><img src="/products/product1.jpg" alt="not available"><br><button>BUY NOW</button></li>
+                <li><img src="/products/product2.jpg" alt="not available"><br><button>BUY NOW</button></li>
+                <li><img src="/products/product3.jpg" alt="not available"><br><button>BUY NOW</button></li>
+            </ul>
+        </div>
+    </header>   
+</body>
+</html>
